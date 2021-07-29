@@ -2,24 +2,24 @@
 /* Block: Call to action 
  * ------------------------------------------------------------- */
 
-.block__call-to-action {
+.block--call-to-action {
     text-align: center;
 }
 
-.block__call-to-action p {
+.block--call-to-action p {
     @include font-size(21);
     font-weight: 700;
     padding-bottom: var(--base);
 }
 
-.block__call-to-action .button {
+.block--call-to-action .button {
     margin: 0 auto;
 }
 
 
 @media screen and ( min-width: 48em ) {
 
-    .block__call-to-action p {
+    .block--call-to-action p {
         max-width: 60%;
         margin: 0 auto var(--base) auto;
     }

@@ -3,19 +3,19 @@
  * ------------------------------------------------------------- */
 
 
-.block__text-right figure { margin:var(--base) 0; }    
+.block--text-right figure { margin:var(--base) 0; }    
 
 
 @media screen and ( min-width: 48em ) {
     
-    .block__text-right {
+    .block--text-right {
         display: grid;
         grid-template-columns: var(--grid-columns);
         grid-column-gap: var(--grid-gap);
         align-items: center;
     }
     
-    .block__text-right article { grid-column: 3 / 5; }
-    .block__text-right figure { grid-column: 1 / 3; }    
+    .block--text-right article { grid-column: 3 / 5; }
+    .block--text-right figure { grid-column: 1 / 3; }    
     
 }

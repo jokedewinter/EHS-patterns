@@ -16,7 +16,7 @@
 @media screen and ( min-width: 64em ) {
 
     .block [class^="column__"] { padding-bottom: 0; }
-    .block.block__-triple > *:nth-last-of-type(n+4) { padding-bottom: calc(var(--base) * 1.5); }
+    .block.block---triple > *:nth-last-of-type(n+4) { padding-bottom: calc(var(--base) * 1.5); }
 }
 
 
@@ -26,15 +26,15 @@
 
 @media screen and ( min-width: 45em ) {
     
-    .block__-double {    
+    .block---double {    
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 6.5%;
         margin-right: 6.5%
     }
     
-    .block__-double * { padding-right: 6.5%; }
-    /*.block__-double > *:last-of-type:not(.blog__excerpt) { padding-top: calc(var(--base) + 1em); }*/
+    .block---double * { padding-right: 6.5%; }
+    /*.block---double > *:last-of-type:not(.blog__excerpt) { padding-top: calc(var(--base) + 1em); }*/
 }
 
 
@@ -44,7 +44,7 @@
 
 @media screen and ( min-width: 35em ) {
     
-    .block__-triple {
+    .block---triple {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 6.5%;
@@ -53,5 +53,5 @@
 
 @media screen and ( min-width: 64em ) {
     
-    .block__-triple { grid-template-columns: repeat(3, 1fr); }
+    .block---triple { grid-template-columns: repeat(3, 1fr); }
 }

@@ -3,18 +3,18 @@
  * ------------------------------------------------------------- */
 
 
-.block__column-bullets {
+.block--column-bullets {
     position: relative;
     padding: calc(var(--base) * 3) 0;
 }
 
-.block__column-bullets > * {
+.block--column-bullets > * {
     position: relative;
     z-index: 100;
 }
 
 
-.block__column-bullets::after {
+.block--column-bullets::after {
     content: "";
     position: absolute;
     top: 0;
@@ -31,18 +31,18 @@
 
 @media screen and ( min-width: 48em ) {
     
-    .block__column-bullets {
+    .block--column-bullets {
         display: grid;
         grid-template-columns: var(--grid-columns);
         grid-column-gap: var(--grid-gap);
     }
     
-    .block__column-bullets h2 {
+    .block--column-bullets h2 {
         grid-column: 1 / 2;
         align-self: flex-start;
     }
     
-    .block__column-bullets ul {
+    .block--column-bullets ul {
         grid-column: 2 / 4;
     }    
     

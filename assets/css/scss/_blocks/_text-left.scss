@@ -2,19 +2,19 @@
 /* Block: Text left, image right 
  * ------------------------------------------------------------- */
 
-.block__text-left figure { margin:var(--base) 0; }    
+.block--text-left figure { margin:var(--base) 0; }    
 
     
 @media screen and ( min-width: 48em ) {
     
-    .block__text-left {
+    .block--text-left {
         display: grid;
         grid-template-columns: var(--grid-columns);
         grid-column-gap: var(--grid-gap);
         align-items: center;
     }
     
-    .block__text-left article { grid-column: 1 / 3; }
-    .block__text-left figure { grid-column: 3 / 5; }    
+    .block--text-left article { grid-column: 1 / 3; }
+    .block--text-left figure { grid-column: 3 / 5; }    
     
 }

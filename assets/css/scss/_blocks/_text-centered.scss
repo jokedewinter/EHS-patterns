@@ -4,13 +4,13 @@
 
 @media screen and ( min-width: 48em ) {
     
-    .block__text-centered {
+    .block--text-centered {
         display: grid;
         grid-template-columns: var(--grid-columns);
         grid-column-gap: var(--grid-gap);
         align-items: center;
     }
     
-    .block__text-centered article { grid-column: 2 / 4; }
+    .block--text-centered article { grid-column: 2 / 4; }
     
 }

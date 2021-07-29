@@ -15,21 +15,12 @@ body {
 	line-height: 1.5;
 	color: var(--col-text);
     
-	width: 80%;
+    width: 90%;
 	max-width: 90em; /* 1440px */
 	margin: 3em auto;
     overflow-x: hidden;
-
-/*    border: 1px dashed var(--col-border);*/
 }
 
-@media screen and ( min-width: 48em ) {
-    
-    body { 
-    	width: 90%;
-        padding: 0 7.5em; 
-    }
-}
 
 
 

@@ -2,3 +2,43 @@
 /* Block: Image tabs 
  * ------------------------------------------------------------- */
 
+#tab--list a {
+    display: block;
+    border-bottom: 1px solid var(--col-border);
+    margin-bottom: 1em;	
+    padding-bottom: 0.5em;
+    
+}
+
+#tab--list h3 {
+    font-family: var(--font-body);
+    text-transform: none;
+    letter-spacing: 0;
+    border-bottom: none;
+    color: var(--col-text);
+    margin-bottom: 0;
+}
+
+#tab--list p { font-weight: 400; }
+a:not(.active) { opacity: .5; }
+
+@media screen and ( max-width: 74.99em ) { .tab--display { display: none; } }
+
+
+
+@media screen and ( min-width: 75em ) {
+    
+    .block--image-tabs {
+        display: grid;
+        grid-template-columns: var(--grid-columns);
+        grid-column-gap: var(--grid-gap);
+    }
+    
+    #tab--list {
+        grid-column: 1 / 2;
+        align-self: flex-start;
+    }
+    
+    .tab--display { grid-column: 2 / 5; }    
+    .active img { display: none; }
+}
