@@ -1,0 +1,39 @@
+
+/* Block: Icon row with text 
+ * ------------------------------------------------------------- */
+
+.block__icon-row-text article { margin-bottom: calc(var(--base) * 2); }
+
+.block__icon-row-text h2 {
+    font-family: var(--font-body);
+    text-transform: none;
+    letter-spacing: 0;
+    margin-bottom: var(--base);
+    color: var(--col-text);
+    border-bottom: none;
+}
+
+.block__icon-row-text img { margin-bottom: var(--base); }
+.block__icon-row-text .svg__image {
+    width: auto;
+    height: 50px;
+}
+
+
+@media screen and ( min-width: 48em ) {
+    
+    .block__icon-row-text {
+        display: grid;
+        grid-template-columns: var(--grid-columns);
+        grid-column-gap: var(--grid-gap);
+    }
+
+    .block__icon-row-text article { 
+        grid-column: span 2; 
+    }
+}
+    
+@media screen and ( min-width: 64em ) {
+    
+    .block__icon-row-text article { grid-column: span 1; }
+}

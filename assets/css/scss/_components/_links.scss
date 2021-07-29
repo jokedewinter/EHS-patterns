@@ -1,0 +1,50 @@
+
+/* Links
+ * ------------------------------------------------------------- */
+
+a {
+	position: relative;
+	text-decoration: none;
+    font-weight: 700;
+    border-bottom: 2px solid var(--col-text);
+	color: var(--col-text);
+	cursor: pointer;
+
+	&:hover {
+        border-color: var(--col-brand);
+		color: var(--col-brand);
+    }
+}
+
+
+/*a:hover { @include transition (all, 0.7s, ease-in-out); }*/
+
+
+
+
+.button {
+	display: inline-block;
+    min-width: 200px;
+	margin: 0 var(--base) var(--base) 0;
+
+	@include font-size(14);
+    font-weight: 800;
+    text-transform: uppercase;
+	letter-spacing: 5px;
+	text-align: center;
+	padding: 0.8em 1em 0.6em 1em;
+	
+    background: var(--col-brand-dark);
+    background: linear-gradient(117deg, rgba(3,137,144,1) 58%, rgba(110,200,206,1) 100%);	
+    border-bottom: none;
+	color: var(--col-text-reverse);
+    border-radius: 7px;
+}
+	
+.button:hover {
+    background: var(--col-brand-dark);
+    color: var(--col-text-reverse);
+}
+
+
+

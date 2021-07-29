@@ -1,0 +1,25 @@
+
+/* Block: Call to action 
+ * ------------------------------------------------------------- */
+
+.block__call-to-action {
+    text-align: center;
+}
+
+.block__call-to-action > * {
+}
+
+.block__call-to-action p {
+    @include font-size(21);
+    font-weight: 700;
+}
+
+
+@media screen and ( min-width: 48em ) {
+
+    .block__call-to-action p {
+        max-width: 60%;
+        margin: 0 auto var(--base) auto;
+    }
+
+}

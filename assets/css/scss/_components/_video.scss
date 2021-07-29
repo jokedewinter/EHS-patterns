@@ -1,0 +1,17 @@
+/**
+ * -------------------------------------------------------------
+ * Video
+ * ------------------------------------------------------------- */
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object { max-width: 100%; }
+
+video {
+    width: 100%;
+	max-width: 100%; /* Adhere to container width. */
+	height: auto; /* Make sure images are scaled correctly. */
+	display: block;
+}
+

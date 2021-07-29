@@ -1,0 +1,73 @@
+/**
+ * ------------------------------------------------------------- 
+ * Typography
+ * ------------------------------------------------------------- */
+
+* {
+	-webkit-hyphens: none;
+	-moz-hyphens: none !important;
+	hyphens: none;
+}
+
+
+/* Headings
+ * ------------------------------------------------------------- */
+
+h1, h2, h3 {
+	clear: both;
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+    font-weight: 700;
+    @include font-size(16);
+    color: var(--col-brand);
+    border-bottom: 2px solid var(--col-brand);
+    margin-bottom: calc(var(--base) * 2);
+}
+
+
+
+
+/* Text
+ * ------------------------------------------------------------- */
+
+p {
+	@include font-size(16);	
+    padding-bottom: 0.75em;
+}
+
+b, strong { font-weight: 700; }
+
+
+/* Blockquote
+ * ------------------------------------------------------------- */
+
+blockquote::before {
+    content: '';
+    width: 44px;
+    height: 36px;
+    position: absolute;
+    top: 0;
+    background-image: url("../images/quote-marks.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+blockquote:first-child { padding-top: calc(var(--base) * 2); }
+
+cite {
+    display: block;
+    margin-top: var(--base);
+    font-style: normal;
+}
+
+cite p { padding-bottom: 0; }
+
+
+
+/* Global classes
+ * ------------------------------------------------------------- */
+
+.intro {
+    font-weight: 700;
+}

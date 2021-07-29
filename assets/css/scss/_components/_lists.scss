@@ -1,0 +1,49 @@
+
+/* Lists
+ * ------------------------------------------------------------- */
+
+ul, ol {
+	margin: 0;
+	padding-left: 1.5em;
+	@include font-size(16);
+}
+
+li { margin-bottom: 0.5em; }
+li p { padding-bottom: 0; }
+
+
+/* List with checks for bullets
+ * ------------------------------------------------------------- */
+
+.list-with-arrows { padding-left: 0; }
+
+
+.list-with-arrows li {
+	list-style: none;
+	position: relative;
+	padding: 0 0 0.5em 1em;
+}
+
+
+.list-with-arrows li::before {
+    content: ""; 
+    position: absolute; 
+    left: 0;
+    top: 0.3em;
+    width: 8px;
+    height: 12px;
+    background-image: url('../images/list-arrow-bullet.svg');
+}
+
+.list-with-arrows li::after {
+    content: "";
+    position: absolute;
+    left: 1em;
+    bottom: 0.1em;
+    border-bottom: 1px solid var(--col-border);
+    width: 100%;
+}
+
+.list-with-arrows li:last-of-type::after {
+    border-bottom: none;
+}

@@ -1,0 +1,80 @@
+/**
+ * -------------------------------------------------------- 
+ * Accordion
+ * -------------------------------------------------------- */
+
+
+/* Trigger 
+ * -------------------------------------------------------- */
+.accordion__trigger {
+	-webkit-appearance: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	text-align: left;
+	width: 100%;
+    padding-right: 2em;
+	z-index: 2;
+    
+	font-size: inherit;
+    font-weight: inherit;
+}
+
+.accordion__trigger:after {
+  border-left: .4em solid transparent;
+  border-right: .4em solid transparent;
+  bottom: 0;
+  content: '';
+  height: 0;
+  margin: auto;
+  position: absolute;
+  right: 1em;
+  top: 0;
+  transition: transform .2s ease-in-out;
+  transform-origin: center center;
+  transform: rotate(0deg);
+  width: 0;
+}
+
+/* Current opened trigger
+ * -------------------------------------------------------- */
+.accordion__trigger[aria-expanded="true"]:after { transform: rotate(180deg); }
+
+.accordion__trigger:hover,
+.accordion__trigger:focus { outline: none; }
+
+.accordion__trigger[aria-disabled="true"]:hover { cursor: not-allowed; }
+
+
+
+/* Panel section
+ * -------------------------------------------------------- */
+.accordion__panel {
+	background-color: inherit;
+	max-height: 0vh;
+	overflow: hidden;
+	padding: 0.001em 1.25em;
+	position: relative;
+	visibility: hidden;
+	z-index: 1;
+}
+
+.accordion__panel--transition {
+	transition:
+		max-height .2s ease-in-out,
+		padding-top .2s ease-in-out,
+		padding-bottom .2s ease-in-out;
+}
+
+.accordion__panel > :last-child { margin-bottom: 0; }
+
+.accordion__panel[aria-hidden="false"] {
+	max-height: 100vh;
+	overflow: auto;
+	padding: 1.25em;
+	visibility: visible;
+}
+

@@ -1,0 +1,57 @@
+/**
+ * -------------------------------------------------------------
+ * Module layout settings
+ * ------------------------------------------------------------- */
+
+.block {
+    padding-top: var(--between);
+    padding-bottom: var(--between);
+}
+
+
+.block [class^="column__"] { padding-bottom: var(--base); }
+.block [class^="column__"]:last-of-type { padding-bottom: 0; }
+
+
+@media screen and ( min-width: 64em ) {
+
+    .block [class^="column__"] { padding-bottom: 0; }
+    .block.block__-triple > *:nth-last-of-type(n+4) { padding-bottom: calc(var(--base) * 1.5); }
+}
+
+
+
+/* Two columns
+ * ------------------------------------------------------------- */
+
+@media screen and ( min-width: 45em ) {
+    
+    .block__-double {    
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 6.5%;
+        margin-right: 6.5%
+    }
+    
+    .block__-double * { padding-right: 6.5%; }
+    /*.block__-double > *:last-of-type:not(.blog__excerpt) { padding-top: calc(var(--base) + 1em); }*/
+}
+
+
+
+/* Three columns
+ * ------------------------------------------------------------- */
+
+@media screen and ( min-width: 35em ) {
+    
+    .block__-triple {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 6.5%;
+    }
+}
+
+@media screen and ( min-width: 64em ) {
+    
+    .block__-triple { grid-template-columns: repeat(3, 1fr); }
+}

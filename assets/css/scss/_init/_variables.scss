@@ -1,0 +1,33 @@
+/**
+ * -------------------------------------------------------- 
+ * Custom properties
+ * -------------------------------------------------------- */
+
+:root {
+
+    --base: 30px;
+    --between: calc(var(--base) * 6);
+
+	--font-body: 'Spartan', Helvetica, Arial, sans-serif;
+	--font-title: 'Montserrat', Verdana, sans-serif;
+
+    --col-text: #182e45;			// dark blue
+	--col-text-light: #dbddda;	// very light grey
+	--col-text-reverse: #f7f7f7;
+    
+	--col-page: #fff;
+    --col-page-light: #f7f7f7;  // off white, with a blue tinge
+    --col-border: #dbddda;
+
+	--col-brand: #05aebb; 		// teal
+    --col-brand-dark: #038990;  // dark teal
+    --col-brand-light: #85cacd;	// light teal
+    
+    --col-alert: #c73245;  // red
+    
+    
+    --grid-columns: repeat(4, 1fr);
+    --grid-gap: calc(var(--base) * 2);
+}
+
+
