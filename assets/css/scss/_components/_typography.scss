@@ -42,6 +42,10 @@ b, strong { font-weight: 700; }
 /* Blockquote
  * ------------------------------------------------------------- */
 
+blockquote {
+    position: relative;
+}
+
 blockquote::before {
     content: '';
     width: 44px;
