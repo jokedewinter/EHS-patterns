@@ -18,7 +18,7 @@
     padding-bottom: 0 !important;
 }
 
-.block--column-icon-text img { margin-bottom: calc(var(--base) / 2); }
+.block--column-icon-text figure { margin-bottom: calc(var(--base) / 2); }
 
 .block--column-icon-text div > * { padding-bottom: var(--base); }
 .block--column-icon-text div > :last-child { padding-bottom: 0; }
